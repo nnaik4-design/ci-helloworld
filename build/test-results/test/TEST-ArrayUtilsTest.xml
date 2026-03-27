@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ArrayUtilsTest" tests="35" skipped="0" failures="0" errors="0" timestamp="2026-03-27T19:58:00.866Z" hostname="Nishanths-MacBook-Pro.local" time="0.02">
+  <properties/>
+  <testcase name="testAverageEmptyThrows()" classname="ArrayUtilsTest" time="0.006"/>
+  <testcase name="testCountOfEmptyArray()" classname="ArrayUtilsTest" time="0.001"/>
+  <testcase name="testCountOfMultipleOccurrences()" classname="ArrayUtilsTest" time="0.0"/>
+  <testcase name="testSumSingleElement()" classname="ArrayUtilsTest" time="0.0"/>
+  <testcase name="testFindMaxEmptyThrows()" classname="ArrayUtilsTest" time="0.0"/>
+  <testcase name="testIndexOfNotFound()" classname="ArrayUtilsTest" time="0.0"/>
+  <testcase name="testAverageSingleElement()" classname="ArrayUtilsTest" time="0.0"/>
+  <testcase name="testContainsNullThrows()" classname="ArrayUtilsTest" time="0.0"/>
+  <testcase name="testFindMinNullThrows()" classname="ArrayUtilsTest" time="0.0"/>
+  <testcase name="testFindMinEmptyThrows()" classname="ArrayUtilsTest" time="0.0"/>
+  <testcase name="testSumNormalArray()" classname="ArrayUtilsTest" time="0.001"/>
+  <testcase name="testFindMinAlreadySorted()" classname="ArrayUtilsTest" time="0.0"/>
+  <testcase name="testCountOfAllSame()" classname="ArrayUtilsTest" time="0.0"/>
+  <testcase name="testContainsFound()" classname="ArrayUtilsTest" time="0.001"/>
+  <testcase name="testIndexOfFound()" classname="ArrayUtilsTest" time="0.0"/>
+  <testcase name="testAverageWithRemainder()" classname="ArrayUtilsTest" time="0.0"/>
+  <testcase name="testContainsNotFound()" classname="ArrayUtilsTest" time="0.0"/>
+  <testcase name="testContainsEmptyArray()" classname="ArrayUtilsTest" time="0.0"/>
+  <testcase name="testFindMinDescending()" classname="ArrayUtilsTest" time="0.0"/>
+  <testcase name="testFindMaxNegatives()" classname="ArrayUtilsTest" time="0.0"/>
+  <testcase name="testIndexOfNullThrows()" classname="ArrayUtilsTest" time="0.0"/>
+  <testcase name="testSumEmptyThrows()" classname="ArrayUtilsTest" time="0.0"/>
+  <testcase name="testCountOfSingleOccurrence()" classname="ArrayUtilsTest" time="0.0"/>
+  <testcase name="testAverageNullThrows()" classname="ArrayUtilsTest" time="0.0"/>
+  <testcase name="testAverageNormalArray()" classname="ArrayUtilsTest" time="0.0"/>
+  <testcase name="testFindMinNegatives()" classname="ArrayUtilsTest" time="0.0"/>
+  <testcase name="testFindMaxNormalArray()" classname="ArrayUtilsTest" time="0.0"/>
+  <testcase name="testFindMinSingleElement()" classname="ArrayUtilsTest" time="0.0"/>
+  <testcase name="testFindMaxSingleElement()" classname="ArrayUtilsTest" time="0.001"/>
+  <testcase name="testIndexOfFirstOccurrence()" classname="ArrayUtilsTest" time="0.0"/>
+  <testcase name="testFindMaxNullThrows()" classname="ArrayUtilsTest" time="0.0"/>
+  <testcase name="testIndexOfEmptyArray()" classname="ArrayUtilsTest" time="0.0"/>
+  <testcase name="testCountOfNoOccurrences()" classname="ArrayUtilsTest" time="0.0"/>
+  <testcase name="testSumNullThrows()" classname="ArrayUtilsTest" time="0.0"/>
+  <testcase name="testFindMinNormalArray()" classname="ArrayUtilsTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ArrayUtils.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ci-helloworld</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">ArrayUtils.java</span></div><h1>ArrayUtils.java</h1><pre class="source lang-java linenums"><span class="nc" id="L1">public class ArrayUtils {</span>
+
+    /**
+     * Finds the minimum value in the array.
+     * @param arr the input array
+     * @return the minimum value
+     * @throws IllegalArgumentException if the array is null or empty
+     */
+    public static int findMin(int[] arr) {
+<span class="fc bfc" id="L10" title="All 4 branches covered.">        if (arr == null || arr.length == 0) {</span>
+<span class="fc" id="L11">            throw new IllegalArgumentException(&quot;Array must not be null or empty&quot;);</span>
+        }
+<span class="fc" id="L13">        int min = arr[0];</span>
+<span class="fc bfc" id="L14" title="All 2 branches covered.">        for (int i = 1; i &lt; arr.length; i++) {</span>
+<span class="fc bfc" id="L15" title="All 2 branches covered.">            if (arr[i] &lt; min) {</span>
+<span class="fc" id="L16">                min = arr[i];</span>
+            }
+        }
+<span class="fc" id="L19">        return min;</span>
+    }
+
+    /**
+     * Finds the maximum value in the array.
+     * @param arr the input array
+     * @return the maximum value
+     * @throws IllegalArgumentException if the array is null or empty
+     */
+    public static int findMax(int[] arr) {
+<span class="fc bfc" id="L29" title="All 4 branches covered.">        if (arr == null || arr.length == 0) {</span>
+<span class="fc" id="L30">            throw new IllegalArgumentException(&quot;Array must not be null or empty&quot;);</span>
+        }
+<span class="fc" id="L32">        int max = arr[0];</span>
+<span class="fc bfc" id="L33" title="All 2 branches covered.">        for (int i = 1; i &lt; arr.length; i++) {</span>
+<span class="fc bfc" id="L34" title="All 2 branches covered.">            if (arr[i] &gt; max) {</span>
+<span class="fc" id="L35">                max = arr[i];</span>
+            }
+        }
+<span class="fc" id="L38">        return max;</span>
+    }
+
+    /**
+     * Calculates the sum of all elements in the array.
+     * @param arr the input array
+     * @return the sum
+     * @throws IllegalArgumentException if the array is null or empty
+     */
+    public static int sum(int[] arr) {
+<span class="fc bfc" id="L48" title="All 4 branches covered.">        if (arr == null || arr.length == 0) {</span>
+<span class="fc" id="L49">            throw new IllegalArgumentException(&quot;Array must not be null or empty&quot;);</span>
+        }
+<span class="fc" id="L51">        int total = 0;</span>
+<span class="fc bfc" id="L52" title="All 2 branches covered.">        for (int a : arr) {</span>
+<span class="fc" id="L53">            total += a;</span>
+        }
+<span class="fc" id="L55">        return total;</span>
+    }
+
+    /**
+     * Calculates the average of all elements in the array.
+     * @param arr the input array
+     * @return the average as a double
+     * @throws IllegalArgumentException if the array is null or empty
+     */
+    public static double average(int[] arr) {
+<span class="fc bfc" id="L65" title="All 4 branches covered.">        if (arr == null || arr.length == 0) {</span>
+<span class="fc" id="L66">            throw new IllegalArgumentException(&quot;Array must not be null or empty&quot;);</span>
+        }
+<span class="fc" id="L68">        return (double) sum(arr) / arr.length;</span>
+    }
+
+    /**
+     * Checks if the array contains the target value.
+     * @param arr the input array
+     * @param target the value to search for
+     * @return true if found, false otherwise
+     * @throws IllegalArgumentException if the array is null
+     */
+    public static boolean contains(int[] arr, int target) {
+<span class="fc bfc" id="L79" title="All 2 branches covered.">        if (arr == null) {</span>
+<span class="fc" id="L80">            throw new IllegalArgumentException(&quot;Array must not be null&quot;);</span>
+        }
+<span class="fc bfc" id="L82" title="All 2 branches covered.">        for (int a : arr) {</span>
+<span class="fc bfc" id="L83" title="All 2 branches covered.">            if (a == target) {</span>
+<span class="fc" id="L84">                return true;</span>
+            }
+        }
+<span class="fc" id="L87">        return false;</span>
+    }
+
+    /**
+     * Finds the index of the first occurrence of the target value.
+     * @param arr the input array
+     * @param target the value to search for
+     * @return the index, or -1 if not found
+     * @throws IllegalArgumentException if the array is null
+     */
+    public static int indexOf(int[] arr, int target) {
+<span class="fc bfc" id="L98" title="All 2 branches covered.">        if (arr == null) {</span>
+<span class="fc" id="L99">            throw new IllegalArgumentException(&quot;Array must not be null&quot;);</span>
+        }
+<span class="fc bfc" id="L101" title="All 2 branches covered.">        for (int i = 0; i &lt; arr.length; i++) {</span>
+<span class="fc bfc" id="L102" title="All 2 branches covered.">            if (arr[i] == target) {</span>
+<span class="fc" id="L103">                return i;</span>
+            }
+        }
+<span class="fc" id="L106">        return -1;</span>
+    }
+
+    /**
+     * Counts the number of occurrences of the target value in the array.
+     * @param x the input array
+     * @param target the value to count
+     * @return the count of occurrences
+     */
+    public static int countOf(int[] x, int target) {
+<span class="fc" id="L116">        int count = 0;</span>
+<span class="fc bfc" id="L117" title="All 2 branches covered.">        for (int a : x) {</span>
+<span class="fc bfc" id="L118" title="All 2 branches covered.">            count = a == target ? count + 1 : count;</span>
+        }
+<span class="fc" id="L120">        return count;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.13.202504020838</span></div></body></html>
