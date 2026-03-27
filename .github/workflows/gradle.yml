@@ -59,8 +59,8 @@ jobs:
 
       - name: Check coverage regression
         run: |
-          CURRENT_BRANCH=${{ steps.jacoco.outputs.branches }}
-          CURRENT_CODE=${{ steps.jacoco.outputs.coverage }}
+          CURRENT_BRANCH=$(echo "${{ steps.jacoco.outputs.branches }} * 100" | bc -l)
+          CURRENT_CODE=$(echo "${{ steps.jacoco.outputs.coverage }} * 100" | bc -l)
           PREV_BRANCH=${{ steps.prev_coverage.outputs.prev_branch }}
           PREV_CODE=${{ steps.prev_coverage.outputs.prev_code }}
           
